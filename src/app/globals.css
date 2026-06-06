@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply  px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tighter
+    }
+    
+    .btn-primary{
+        @apply bg-black text-white;
+    }
+    
+    .btn-text{
+        @apply text-black bg-transparent;
+    }
+
+    .logo-ticker-image{
+        @apply h-20 w-auto;
+    }
+    .tag{
+        @apply text-sm inline-flex border-[#222]/10 px-3 py-1 rounded-lg tracking-tight;
+    }
+    .hover{
+        @apply  hover:bg-black hover:text-white border border-white transition-colors duration-200;
+    }
+    .hide-scrollbar {
+     -ms-overflow-style: none;  
+    scrollbar-width: none;     
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+    display: none; 
+    }  
+    .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-repeat: no-repeat;
+     mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    }
+
+    @keyframes spin {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+    }
+
+    .animate-spin-custom {
+    animation: spin 2s linear infinite;
+    }
+
+    
+}
+          
+    
+
+
+
